@@ -1,6 +1,6 @@
 ## Deployed link:
 
-https://dm-helpdesk-client.vercel.app/
+https://vercel.com/ishangupta1510s-projects/fb-dm/HhjG3BwHueoS8njRr7ZA35DZugoU
 
 ## Video:
 
