@@ -18,13 +18,16 @@ export const SignUpCard = () => {
 
   const handleSignUp = async () => {
     try {
-      const response = await fetch("http://localhost:8000/user-auth/sign-up", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, password }),
-      });
+      const response = await fetch(
+        "https://fb-dm-main.onrender.com/user-auth/sign-up",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, password }),
+        }
+      );
 
       if (response.ok) {
         console.log("User signed up successfully");

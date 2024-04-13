@@ -25,13 +25,16 @@ export const LoginCard = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:8000/user-auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      const response = await fetch(
+        "https://fb-dm-main.onrender.com/user-auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();
